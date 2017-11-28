@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spot_name: MyString
+  address: MyString
+  spot_time: 1.5
+  price: 1
+
+two:
+  spot_name: MyString
+  address: MyString
+  spot_time: 1.5
+  price: 1

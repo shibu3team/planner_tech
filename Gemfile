@@ -27,18 +27,30 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+#has_secure_passwordを使うためのGEM
+gem 'bcrypt'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+#ログイン機能を簡易に実装するGEM
+gem "devise"
+
+#画像投稿機能を実装させる
+gem "carrierwave"
+#carrierwaveとセット。投稿に制限をつける。
+# gem 'rmagick'
+gem 'annotate'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebug' anywhere
+  # in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+
 end
 
 group :development do

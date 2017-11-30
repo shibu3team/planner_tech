@@ -1,5 +1,5 @@
 class Plan < ApplicationRecord
-  validates :plan_name, presence: true, length:{ in: 5..64 }
+  validates :name, presence: true, length:{ in: 5..64 }
   validates :description, presence: true, length:{maximum: 1023 }
   validates :time, length:{ in: 1..24}
   validates :price, length:{ in: 0..99999}

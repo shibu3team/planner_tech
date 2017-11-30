@@ -1,7 +1,7 @@
 class Spot < ApplicationRecord
   validates :name, presence:true, length:{ in: 1..32 }
   validates :address, presence: true, uniqueness: true, length:{ maximum: 140 }
-  validates :spot_time, length:{ maximum: 10 }
+  validates :time, length:{ maximum: 10 }
   validates :price, length:{ maximum: 99999 }
 
 
